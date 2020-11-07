@@ -1,3 +1,5 @@
+@import (css) url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,20 +13,37 @@ body {
 
 }
 
+h1, h3 {
+  font-family: 'Goldman', cursive;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a.active, a:hover {
+  border-bottom: 0.125em solid white;
+  color: white;
+}
+
 header {
   background: #000 url(../img/main-header.jpeg) no-repeat bottom center;
   background-size: cover;
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding: 1em 0 2em 0;
+  }
 }
 
-header h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: white;
-  padding: 1em 0 2em 0;
-}
+/**********************************
+Navigation Menu
+***********************************/
 
 #nav-menu {
   text-align: center;
+  font-family: 'Goldman', cursive;
   border-bottom: 0.0625em solid white;
 }
 
@@ -36,14 +55,6 @@ nav {
       display: inline-block;   
       font-size: 1em;
       padding: 0.1875em; 
-      a {
-        color: white;
-        text-decoration: none;
-      }
-      a.active, a:hover {
-        border-bottom: 0.125em solid white;
-        color: white;
-      }
     }
   }
 }
@@ -63,17 +74,19 @@ nav {
   padding: 0 0.1875em;
 }
 
+/**********************************
+Index
+***********************************/
+
 figure {
   float: left;
 	width: 30%; 
 	margin: 3% 2% 0 3%;
-	text-align: center;
-}
-
-img {
-	width: 100%;
-  height: auto;
-  max-width: 370px;
+  text-align: center;
+  img {
+    height: auto;
+    max-width: 370px;
+  }
 }
 
 p {
@@ -84,7 +97,7 @@ p {
 div.content {
   float: left;
 	width: 63%;
-	margin: 2% 0 2% 0;
+	margin: 2% 0;
 }
 
 @media (max-width: 768px) {
@@ -108,6 +121,9 @@ div.content {
   }
 }
 
+/****************************
+Best sellers
+*****************************/
 article {
   width: 90%;
   border: 1px solid white;
@@ -119,6 +135,9 @@ article {
   }
   figure {
     margin: 1%;
+    a:hover {
+      border-bottom: none;
+    }
     img {
       width: 60%;
     }
@@ -137,12 +156,23 @@ article {
   }
   article {
     width: 31%;
-    margin: 0 1% 0 1%;
+    margin: 0 1%;
     figure img {
       width: 100%;
     }
     p {
       width: 70%;
     }
+  }
+}
+
+.detailBook {
+  .flexContainer{
+    margin: 2% 2%;
+  }
+  figure {
+    float: none;
+    margin: 0 1%;
+    width: auto;
   }
 }
