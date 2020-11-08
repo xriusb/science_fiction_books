@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Goldman', cursive;
 }
 
 body {
@@ -11,10 +12,6 @@ body {
   font: 16px Verdana, "Times New Roman", Times, serif;
   background-color: black;
 
-}
-
-h1, h3 {
-  font-family: 'Goldman', cursive;
 }
 
 a {
@@ -43,7 +40,6 @@ Navigation Menu
 
 #nav-menu {
   text-align: center;
-  font-family: 'Goldman', cursive;
   border-bottom: 0.0625em solid white;
 }
 
@@ -174,5 +170,23 @@ article {
     float: none;
     margin: 0 1%;
     width: auto;
+  }
+}
+
+.subGeners {
+  padding: 2% 3%;
+  list-style: none;
+  li {
+    border: solid 1px;
+    padding: 0.25% 1%;
+    &:hover {
+      background-color: rgb(105, 102, 102);
+      cursor: pointer;
+    }
+  }
+  p {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 1% 2%;
   }
 }
