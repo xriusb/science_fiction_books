@@ -38,8 +38,17 @@ header {
   background-size: cover;
   h1 {
     font-size: 3em;
-    padding: 1em 0 2em 0;
+    padding: 0 0 1em 0;
   }
+  img {
+    display: block;
+    margin: auto;
+    padding: 0.5em 0 1em;
+  }
+}
+
+footer {
+  border-top: 0.0625em solid white;
 }
 
 /**********************************
@@ -121,7 +130,6 @@ article {
   width: 90%;
   border: 1px solid white;
   margin: auto;
-  margin-bottom: 2%;
   h3 {
     padding: 1% 1% 0;
     min-height: 2.34em;
@@ -190,4 +198,27 @@ Sub Geners List
     margin: 0 1%;
     width: auto;
   }
+}
+
+footer {
+  div {
+    text-align: center;
+    img {
+      margin-top: 0.5em;
+      width: 10%;
+    }
+  }
+}
+
+.clip-s {
+  clip-path: polygon(100% 0, 82% 18%, 38% 18%, 100% 85%, 81% 100%, 32% 100%, 4% 85%, 81% 85%, 0 0);
+}
+
+.clip-f {
+  clip-path: polygon(100% 0, 80% 15%, 16% 15%, 16% 38%, 66% 38%, 55% 51%, 15% 51%, 15% 89%, 0 100%, 0 0);
+}
+
+.clip-b {
+  clip-path: polygon(81% 0, 0 0, 0 100%, 83% 100%, 100% 88%, 17% 88%, 17% 61%, 80% 61%, 80% 88%, 100% 89%, 100% 50%, 100% 14%, 80% 14%, 80% 45%, 17% 45%, 17% 15%, 100% 15%);
+
 }
