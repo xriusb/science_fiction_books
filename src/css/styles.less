@@ -33,6 +33,11 @@ a.active, a:hover {
   color: white;
 }
 
+.inlineCentered {
+  display: block;
+  margin: auto;
+}
+
 header {
   background: #000 url(../img/main-header.jpeg) no-repeat bottom center;
   background-size: cover;
@@ -41,8 +46,7 @@ header {
     padding: 0 0 1em 0;
   }
   img {
-    display: block;
-    margin: auto;
+    .inlineCentered();
     padding: 0.5em 0 1em;
   }
 }
@@ -124,7 +128,7 @@ Index
 }
 
 /****************************
-Books Geners
+Books Genres
 *****************************/
 article {
   width: 90%;
@@ -167,7 +171,7 @@ article {
 }
 
 /****************************
-Sub Geners List
+Sub Generes List
 *****************************/
 .subGeners {
   padding: 2% 3%;
@@ -196,14 +200,12 @@ Sub Geners List
   }
   figure {
     margin: 0 1%;
-    width: auto;
   }
 }
 
 .bookIcon {
   width: 5%;
-  display: block;
-  margin: auto;
+  .inlineCentered();
 }
 
 footer {
@@ -226,5 +228,9 @@ footer {
 
 .clip-b {
   clip-path: polygon(81% 0, 0 0, 0 100%, 83% 100%, 100% 88%, 17% 88%, 17% 61%, 80% 61%, 80% 88%, 100% 89%, 100% 50%, 100% 14%, 80% 14%, 80% 45%, 17% 45%, 17% 15%, 100% 15%);
+}
 
+picture * {
+  .inlineCentered();
+  width: 80%;
 }
