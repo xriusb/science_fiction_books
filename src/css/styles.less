@@ -194,14 +194,24 @@ Sub Generes List
   }
 }
 
-.detailBook {
-  .flexContainer{
-    margin: 0 2%;
-  }
-  figure {
-    margin: 0 1%;
+@media (min-width: 768px) {
+  .detailBook {
+    .flexContainer{
+      margin: 0 2%;
+    }
+    figure {
+      margin: 0 1%;
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+    .bookDescription{
+      width: 70%;
+    }
   }
 }
+
 
 .bookIcon {
   width: 5%;
