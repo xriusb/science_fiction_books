@@ -39,7 +39,10 @@ a.active, a:hover {
 }
 
 header {
-  background: #000 url(../img/main-header.jpeg) no-repeat bottom center;
+  background: #000 url(../img/main-header.webp) no-repeat center;
+  @media (max-width: 480px) {
+    background: #000 url(../img/main-header_small.webp) no-repeat center;
+  }
   background-size: cover;
   h1 {
     font-size: 3em;
